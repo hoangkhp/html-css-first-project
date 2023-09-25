@@ -9,6 +9,12 @@
 html{
     font-size: 62.5%;
 }
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body{
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
@@ -68,6 +74,7 @@ a{
     /* Su dung relative: Khien the vua co the duoc dinh vi, vua co bo cuc luong */
     background: #E6F0FF;
     flex-direction: column;
+    justify-content: center;
     height: calc(100vh - 90px);
 }
 
@@ -115,21 +122,18 @@ a{
     border-radius: 8px;
 }
 
-.hero{
-    margin-top: 130px;
-}
 
-.hero .info{
+.hero-wrap .info{
     width: 51%;
 }
-.hero .sub-title{
+.hero-wrap .sub-title{
     color: #687690;
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 0.01em;
     line-height: 1.5;
 }
-.hero .title{
+.hero-wrap .title{
     margin-top: 8px;
     color: #000336;
     font-size: 6.2rem;
@@ -137,7 +141,7 @@ a{
     line-height: 1.19;
 }
 
-.hero .desc{
+.hero-wrap .desc{
     margin-top: 30px;
     color: #5A6473;
     font-size: 1.8rem;
