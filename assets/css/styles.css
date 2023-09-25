@@ -53,18 +53,30 @@ a{
     overflow: hidden;
 }
 /* ==================Header================= */
-.header{
+
+.fixed-header{
+    background: #E6F0FF;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.hero-wrap{
     position: relative;
+    display: flex;
     /* Su dung relative: Khien the vua co the duoc dinh vi, vua co bo cuc luong */
     background: #E6F0FF;
-    height: 100vh;
+    flex-direction: column;
+    height: calc(100vh - 90px);
 }
 
 .navbar{
     display: flex;
     align-items: center;
     /* Dua cac chu tro ve nam ngang, va dua chung ra giua */
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
     /* margin collapse: Nghia la margin-bottom cua the tren se chong len top cua the duoi */
     /* Hoac be ca the cha cua no nhay theo */
 }
@@ -84,6 +96,7 @@ a{
     padding: 8px 14px;
 }
 /* hien tranng thai cho cac nut dieu huong */
+
 .navbar ul a:hover{
     text-decoration: underline;
     /* hover: giup the hien trang thai khi dua con tro vao */
@@ -191,7 +204,7 @@ a{
 }
 /* ==================Guides================= */
 .guides{
-    margin-top: 200px;
+    margin-top: 40px;
     padding: 93px 0 79px;
 }
 .guides .sub-title{
@@ -627,6 +640,11 @@ a{
     width: 28px;
     height: 28px;
     border-radius: 5px;
+    background: #F9f9f9;
+}
+
+.footer .social-link + .social-link{
+    margin-left: 16px;
 }
 
 .footer .social-link:hover{
